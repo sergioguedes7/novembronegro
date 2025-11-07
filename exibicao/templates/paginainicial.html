@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luta antiracista</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
         rel="stylesheet">
-                    <style>
+                    <!-- <style>
 :root {
     --primaria: #672d03;
     --secundaria: #A0522D;
@@ -30,7 +31,7 @@ body {
     color: var(--letras);
     font-size: 16px;
 }
-        </style>
+        </style> -->
 </head>
 <body>
 
@@ -58,7 +59,7 @@ body {
 
             <div class="item ativo">
 
-                <div class="exemplos_ativo"><img src="../statics/img/pessoa3.jpg" alt="Pessoa 1"></div>
+                <div class="exemplos_ativo"><img src="{{ url_for('static', filename='img/pessoa1.jpg') }}" alt="Pessoa 1"></div>
                 <div class="content">
                     <p class="product-name">Nome da pessoa</p>
                     <p class="description">Explicação sobre a pessoa</p>
@@ -69,7 +70,7 @@ body {
             
             <div class="item">
 
-                <div class="exemplos_ativo"><img src="../statics/img/pessoa2.png" alt="Pessoa 2"></div>
+                <div class="exemplos_ativo"><img src="{{ url_for('static', filename='img/pessoa2.jpg') }}" alt="Pessoa 2"></div>
                 <div class="content">
                     <p class="product-name">Nome da pessoa</p>
                     <p class="description">Explicação sobre a pessoa</p>
@@ -79,7 +80,7 @@ body {
             </div>
             <div class="item">
 
-                <div class="exemplos_ativo"><img src="../statics/img" alt="Pessoa 3"></div>
+                <div class="exemplos_ativo"><img src="{{ url_for('static', filename='img/pessoa3.jpg') }}" alt="Pessoa 3"></div>
                 <div class="content">
                     <p class="product-name">Nome da pessoa</p>
                     <p class="description">Explicação sobre a pessoa</p>
@@ -116,6 +117,7 @@ body {
         </div>
 
         </div>
+
 
     </main>
 
