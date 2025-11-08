@@ -39,9 +39,9 @@ body {
         <div class="logo">2 Info</div>
         <nav class="menu-lateral">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="{{url_for('homepage')}}">Home</a></li>
                 <li><a href="#">Novembro Negro</a></li>
-                <li><a href="#">Sobre nós</a></li>
+                <li><a href="{{url_for('sobrenos')}}">Sobre nós</a></li>
                 <li><a href="#">Materiais educativos</a></li>
                 <li><a href="#">Creditos</a></li>
             </ul>
@@ -49,50 +49,47 @@ body {
     </header>
 
     <main class="principal" id="inicio">
+        <section class="titulo-main">
+            <h1>FIGURAS DA NOSSA TURMA</h1>
+            <p>Alguns de nossos exemplos de pessoas negras.</p>
+        </section>
 
-        <div class="texturas_circulos">
-            <div class="circulos_de_fundo"></div>
-            <div class="circulos_de_fundo"></div>
-            <div class="circulos_de_fundo"></div>
-            <div class="circulos_de_fundo"></div>
-        </div>
+            <div class="list">
+                <div class="item ativo">
+                    <div class="exemplos_ativo">
+                        <img src="{{ url_for('static', filename='img/diego.png') }}" alt="Pessoa 1">
+                    </div>  
 
-        <div class="list">
-
-            <div class="item ativo">
-
-                <div class="exemplos_ativo"><img src="{{ url_for('static', filename='img/pessoa1.jpg') }}" alt="Pessoa 1"></div>
                 <div class="content">
-                    <p class="product-name">Nome da pessoa</p>
-                    <p class="description">Explicação sobre a pessoa</p>
+                    <h2 class="product-name">Diego</h2>
+                    <p class="description">Estudante do 2° Ano de Informática do IF Baiano Lapa</p>
                 </div>
-                <button class="btn">Saiba mais</button>
-
             </div>
+
             
             <div class="item">
 
-                <div class="exemplos_ativo"><img src="{{ url_for('static', filename='img/pessoa2.jpg') }}" alt="Pessoa 2"></div>
+                <div class="exemplos_ativo"><img src="{{ url_for('static', filename='img/pessoa2.png') }}" alt="Pessoa 2"></div>
                 <div class="content">
                     <p class="product-name">Nome da pessoa</p>
                     <p class="description">Explicação sobre a pessoa</p>
                 </div>
-                <button class="btn">Saiba mais</button>
 
             </div>
+
+
             <div class="item">
 
-                <div class="exemplos_ativo"><img src="{{ url_for('static', filename='img/pessoa3.jpg') }}" alt="Pessoa 3"></div>
+                <div class="exemplos_ativo"><img src="{{ url_for('static', filename='img/pessoa3.png') }}" alt="Pessoa 3"></div>
                 <div class="content">
                     <p class="product-name">Nome da pessoa</p>
                     <p class="description">Explicação sobre a pessoa</p>
                 </div>
-                <button class="btn">Saiba mais</button>
 
             </div>
         </div>
 
-        <div class="arrows">
+        <!-- <div class="arrows">
 
             <button class="arrow-btn" id="prev"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
@@ -118,7 +115,7 @@ body {
             <div class="dot"></div>
         </div>
 
-        </div>
+        </div> -->
 
 
     </main>

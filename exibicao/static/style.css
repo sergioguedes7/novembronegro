@@ -7,14 +7,15 @@
 }
 
 body {
-    background-color: #1C1C1C;
+    background: linear-gradient(135deg,rgba(36, 35, 33, 1));;
     color: #fff;
     font: 16px;
-    overflow: hidden; /*Nao deixa eu rodar a tela*/
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 header {
-    position: fixed;
+    height: 100px;
     width: 90vw;
     top: 0;
     padding: 20px 50px;
@@ -69,11 +70,45 @@ header nav ul li a {
 header nav ul li a:hover {
   color: #D7CCC8;       
 }
+
+.titulo-main {
+    text-align: center;
+    margin-top: 30px;
+    color: #F9F9F9;
+    padding: 40px 20px;
+}
+
+.titulo-main h1 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #D7CCC8;
+}
+
+.titulo-main p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .titulo-site h1 {
+        font-size: 2rem;
+    }
+
+    .titulo-site p {
+        font-size: 1rem;
+    }
+}
+
+
 .principal {
-    height: 100vh;
+    padding-top: 120px;
+    min-height: 100vh;
     position: relative;
-    background: linear-gradient(135deg,rgba(36, 35, 33, 1));
-    overflow: hidden;
+    background: linear-gradient(135deg, rgba(36, 35, 33, 1));
+    overflow: visible;
 }
 
 .principal::before {
@@ -102,40 +137,54 @@ header nav ul li a:hover {
     }
 }
 
-.list { 
+.list {
     width: 80%;
-    height: 100%;
-    margin: 0 auto;
-    position: relative;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 80px; 
+    padding-top: calc(80px + 2vh);
+    transform: translateY(-30px);
 }
 
+
 .item {
-    position: absolute;
-    inset: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
-    opacity: 0;
+    justify-content: center;
+    gap: 40px;
+    opacity: 1;
+    position: relative; 
 }
+
+@media (max-width: 768px) {
+    .item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .exemplos_ativo img {
+        width: 80%;
+    }
+}
+
+.exemplos_ativo img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; 
+    border-radius: 20px;
+}
+
+
+.content {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}   
 
 .ativo {
     opacity: 1;
-}
-
-.exemplos_img {
-    width: 45%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 2;
-}
-
-.exemplos_img img {
-    max-width: 80%;
-    max-height: 60%;
-    filter: drop-shadow(0 0 30px rgba(82, 79, 72, 1));
 }
 
 .content {
@@ -146,4 +195,40 @@ header nav ul li a:hover {
     
 }
 
+.exemplos_ativo img {
+    width: 350px;
+    height: auto;
+    border-radius: 80px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
 
+.content {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .item {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .exemplos_ativo img {
+        width: 80%;
+    }
+}
