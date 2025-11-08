@@ -8,3 +8,7 @@ def homepage():
 @app.route('/novembronegro')
 def novembronegro():
     return render_template('sobre_novembronegro.html')
+
+@app.route('/sobrenos')
+def sobrenos():
+    return render_template('sobrenos.html')

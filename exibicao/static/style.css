@@ -43,6 +43,7 @@ header nav ul li {
     padding: 5px 0;
 }
 
+
 header nav ul li::after {
     content: "";
     position: absolute;
@@ -58,6 +59,16 @@ header nav ul li:hover::after{
     width: 100%;
 }
 
+header nav ul li a {
+  text-decoration: none;  
+  color: #fff;            
+  font-weight: 500;      
+  transition: color 0.3s ease; 
+}
+
+header nav ul li a:hover {
+  color: #D7CCC8;       
+}
 .principal {
     height: 100vh;
     position: relative;
@@ -134,3 +145,5 @@ header nav ul li:hover::after{
     align-items: flex-start;
     
 }
+
+
