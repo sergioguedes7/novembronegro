@@ -7,7 +7,7 @@
 }
 
 body {
-    background: linear-gradient(135deg,rgba(36, 35, 33, 1));;
+    background: linear-gradient(135deg, #3a3a3a, #707070, #b5b5b5);
     color: #fff;
     font: 16px;
     overflow-x: hidden;
@@ -23,6 +23,27 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 3;
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.icone-nav {
+  position: absolute;
+  top: 15px;
+  right: -80px;
+}
+
+.icone-nav img {
+  width: 45px;
+  height: 60px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.icone-nav img:hover {
+  transform: scale(1.1);
 }
 
 .logo {
