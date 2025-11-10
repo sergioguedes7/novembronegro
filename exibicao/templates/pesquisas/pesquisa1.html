@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luta Antirracista</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #7d4014;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  background: #3d1f0a;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+header {
+  background-color: #D9A441;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-voltar {
+  background: none;
+  color: #3d1f0a;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-voltar:hover {
+  color: #7d4014;
+}
+
+.pesquisa {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.pesquisa h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: #f4f4f4;
+}
+
+.pesquisa p {
+  font-size: 2rem;
+  text-align: justify;
+  color: #f4f4f4;
+}
+
+.referencias {
+  background-color: #3d1f0a;
+  padding: 30px;
+  border-top: 2px solid #D9A441;
+}
+
+.referencias h2 {
+  margin-bottom: 10px;
+  color: #fafafa;
+}
+
+.referencias ul {
+  list-style: none;
+}
+
+.referencias li {
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.referencias span {
+  margin-bottom: 8px;
+  color: #3d65f4;
+}
+
+[vw-access-button] {
+  transform: scale(0.8) !important;
+  bottom: 15px !important;
+  right: 15px !important;
+}
+
+[vw-plugin-wrapper] {
+  transform: scale(0.8) !important;
+  transform-origin: bottom right !important;
+}
+    </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <a href="{{url_for('homepage')}}" class="btn-voltar"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+  <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+</svg></a>
+    </header>
+
+    <main class="pesquisa">
+        <h1>Novembro Negro</h1>
+        <p>O mês de novembro marca a luta e a resistência do povo negro no Brasil, tendo como
+símbolo o Dia Nacional da Consciência Negra (20 de novembro), data que relembra Zumbi
+dos Palmares, líder do Quilombo dos Palmares, assassinado em 1695. O quilombo
+representa o primeiro grito de liberdade dos negros escravizados e se tornou referência
+histórica na luta por direitos, igualdade e justiça social. <br><br>
+Ao longo do tempo, o Movimento Negro Unificado (MNU) e outras organizações têm
+reafirmado a importância da consciência negra como reconhecimento da identidade,
+orgulho e poder do povo negro. Essa luta busca combater o racismo e valorizar o legado de
+figuras como Dandara, Luiz Gama, Maria Quitéria e Carlos Marighella. <br><br>
+Apesar de avanços, as desigualdades raciais persistem: pessoas negras ainda possuem
+menor renda e menor acesso a posições de destaque. Dados do IBGE e do Ipea mostram
+que a renda média de negros é menos da metade da de brancos. <br><br>
+Para lideranças como Regina Lúcia (MNU) e Rafael Pinto (Conen), o Novembro Negro é um
+momento de reflexão e reafirmação política, buscando que a história brasileira reconheça o
+protagonismo do povo negro e que a sociedade avance na construção de igualdade com
+respeito às diferenças.</p>
+    </main>
+
+    <footer class="referencias">
+       <h2>Referências</h2>
+       <ul>
+        <li>LIMA, Wesley. Novembro: mês da consciência negra. Página do MST, 2023. Disponível em:
+            <span>https://www.ufrb.edu.br/bibliotecacetens/noticias/189-novembro-negro</span>. Acesso em: 5 nov.
+            2025</li>
+       </ul>
+    </footer>
+
+  </div>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+</body>
+</html>

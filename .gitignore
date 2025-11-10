@@ -1,15 +1,12 @@
-# Ignorar ambiente virtual
 venv/
 
-# Ignorar ficheiros temporários
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Ignorar ficheiros do VS Code
+
 .vscode/
 
-# Ignorar ficheiros de sistema
 .DS_Store
 Thumbs.db

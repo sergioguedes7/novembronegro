@@ -3,126 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luta antiracista</title>
-    <link rel="shortcut icon" href="../static/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Luta Antirracista</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
         rel="stylesheet">
-                    <!-- <style>
-:root {
-    --primaria: #672d03;
-    --secundaria: #A0522D;
-    --profundo: #301f18;
-    --letras: #fff;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    font-family: "Montserrat", sans-serif;
-}
-
-body {
-    background-color: var(--primaria);
-    color: var(--letras);
-    font-size: 16px;
-}
-        </style> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="logo">2 Info</div>
-        <nav class="menu-lateral">
+
+        <div class="logo"><a href="#inicial"><img src="{{ url_for('static', filename='img/home.png') }}" alt="home"></a></div>
+        <nav>
             <ul>
-                <li><a href="{{url_for('homepage')}}">Home</a></li>
-                <li><a href="#">Novembro Negro</a></li>
-                <li><a href="{{url_for('sobrenos')}}">Sobre nós</a></li>
-                <li><a href="#">Materiais educativos</a></li>
-                <li><a href="#">Creditos</a></li>
+                <li><a href="#discentes">Nossos Alunos</a></li>
+                <li><a href="#materiais_ed">Materiais Educativos</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
             </ul>
         </nav>
-          <div class="icone-nav">
-            <img src="{{ url_for('static', filename='img/imagem-nav.png') }}" alt="Ícone do site">
+        <a href="https://www.instagram.com/tec.info2024/" target="_blank" class="instagram">
+    <img src="{{ url_for('static', filename='img/instagram.png') }}" alt="Logo insta" class="instagram">
+</a>
+    </header>
+    
+    <main class="home-inicial">
+        <div class="texturas_circulos">
+            <div class="circulos_de_fundo"></div>
+            <div class="circulos_de_fundo"></div>
+            <div class="circulos_de_fundo"></div>
+        </div>
+        <main id="inicial">
+            <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>NOVEMBRO <span>NEGRO</span> <br><span>2º</span> Ano de <span> Informática</span></h1>
+                        <p>Novembro é um mês simbólico e de profunda importância para a população negra no Brasil. <br>
+
+Marcado pelo Dia da Consciência Negra, celebrado em 20 de novembro, esse período convida toda a sociedade a refletir sobre o racismo estrutural, as desigualdades históricas e, sobretudo, sobre a resistência e a força do povo negro ao longo dos séculos. <br> <br>
+
+Nós, do 2º Ano de Informática Integrado do IF Baiano – Campus Lapa, te convidamos a conhecer e valorizar essa data tão significativa, que celebra a luta, a cultura e a história de um povo que continua inspirando a construção de uma sociedade mais justa, igualitária e antirracista.
+                        </p>
+                        <div class="btn"><a href="#sobre">Sobre nós</a></div>
+                    </div>
+                    <div class="img-topo-site">
+                        <img src="{{ url_for('static', filename='img/turma.jpg')}}" alt="turma">
+                    </div>
+                </div>
+
+            </div>
+            </section>
+        </main>
+    </main>
+
+    <section class="principal">
+
+        <div class="texturas_circulos">
+            <div class="circulos_de_fundo"></div>
+            <div class="circulos_de_fundo"></div>
+            <div class="circulos_de_fundo"></div>
+            <div class="circulos_de_fundo"></div>
         </div>
 
-    </header>
+        <div class="list" id="discentes">
+            <h2 class="title">NOSSOS <span>ALUNOS</span></h2>
 
-    <main class="principal" id="inicio">
-        <section class="titulo-main">
-            <h1>FIGURAS DA NOSSA TURMA</h1>
-            <p>Alguns de nossos exemplos de pessoas negras.</p>
-        </section>
+            <div class="item active">
 
-            <div class="list">
-                <div class="item ativo">
-                    <div class="exemplos_ativo">
-                        <img src="{{ url_for('static', filename='img/diego.png') }}" alt="Pessoa 1">
-                    </div>  
-
+                <div class="exemplos_ativo"><img src="{{ url_for('static', filename='img/diego-foto.png')}}" alt="Pessoa 1"></div>
                 <div class="content">
-                    <h2 class="product-name">Diego</h2>
-                    <p class="description">Estudante do 2° Ano de Informática do IF Baiano Lapa</p>
-                </div>
-            </div>
+                    <p class="product-name">Diego dos Anjos</p>
+                    <p class="description">Explicação sobre a pessoa</p>
+                    <button class="btn">Saiba mais</button>
 
+                </div>
+                    
+            </div>
             
             <div class="item">
 
-                <div class="exemplos_ativo"><img src="{{ url_for('static', filename='img/pessoa2.png') }}" alt="Pessoa 2"></div>
+                <div class="exemplos_ativo"><img src="{{ url_for('static', filename='img/pessoa1.png')}}" alt="Pessoa 2"></div>
                 <div class="content">
                     <p class="product-name">Nome da pessoa</p>
                     <p class="description">Explicação sobre a pessoa</p>
+                    <button class="btn">Saiba mais</button>
                 </div>
 
             </div>
-
-
             <div class="item">
 
-                <div class="exemplos_ativo"><img src="{{ url_for('static', filename='img/pessoa3.png') }}" alt="Pessoa 3"></div>
+                <div class="exemplos_ativo"><img src="{{ url_for('static', filename='img/pessoa2.png')}}" alt="Pessoa 2"></div>
                 <div class="content">
                     <p class="product-name">Nome da pessoa</p>
                     <p class="description">Explicação sobre a pessoa</p>
+                    <button class="btn">Saiba mais</button>
                 </div>
 
             </div>
         </div>
 
-        <!-- <div class="arrows">
+        <div class="arrows" id="next">
+            <button class="arrow-btn" id="tras"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+  <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+</svg></button>
 
-            <button class="arrow-btn" id="prev"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
-                </svg>
-            </button>
-
-                <button class="arrow-btn" id="next"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
-                    </svg>
-                </button>
+            <button class="arrow-btn" id="frente"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+  <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+</svg></button>
         </div>
 
         <div class="indicators">
             <div class="numbers">01</div>
 
         <div class="dots">
-            <div class="dots active"></div>
+            <div class="dot active"></div>
             <div class="dot"></div>
             <div class="dot"></div>
         </div>
 
-        </div> -->
+        </div>
 
+    </section>
 
-    </main>
+    <section class="menu" id="materiais_ed">
+        <h2 class="title"><span>MATERIAIS</span> EDUCATIVOS</h2>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='pesquisas/images.jpg')}}" alt="img1">
+                <h3>Novembro Negro</h3>
+                <p class="price">Oque é?</p>
+                <a href="{{url_for('pesquisa1')}}" class="btn">Clique aqui</a>
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='pesquisas/pesquisa2.PNG')}}" alt="img1">
+                <h3>6 atitudes para combater o racismo institucional no setor público</h3>
+                <p class="price"></p>
+                <a href="{{url_for('pesquisa2')}}" class="btn">Clique aqui</a>
+            </div>
+
+            <div class="box">
+                <img src="" alt="img1">
+                <h3>T1</h3>
+                <p class="price"></p>
+                <a href="" class="btn">Clique aqui</a>
+            </div>
+
+            <div class="box">
+                <img src="" alt="img1">
+                <h3>T1</h3>
+                <p class="price"></p>
+                <a href="" class="btn">Clique aqui</a>
+            </div>
+
+                <div class="box">
+                <img src="" alt="img1">
+                <h3>T1</h3>
+                <p class="price"></p>
+                <a href="" class="btn">Clique aqui</a>
+            </div>
+            
+            <div class="box">
+                <img src="" alt="img1">
+                <h3>T1</h3>
+                <p class="price"></p>
+                <a href="" class="btn">Clique aqui</a>
+            </div>
+
+        </div>
+        <div class="texturas_circulos">
+            <div class="circulos_de_fundo"></div>
+            <div class="circulos_de_fundo"></div>
+            <div class="circulos_de_fundo"></div>
+            <div class="circulos_de_fundo"></div>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <h2 class="title">SOBRE <span>NÓS</span></h2>
+        <div class="row">
+            <div class="imagemsobre"><img src="{{ url_for('static', filename='img/turma.jpg')}}" alt="foto da turma">
+        </div>
+        <div class="cont">
+            <h3>2º Ano de Informática Integrado</h3>
+            <p>Somos a turma do <strong>2º Ano de Informática Integrado</strong> do Instituto Federal Baiano – Campus Lapa.
+                Este projeto foi desenvolvido com o objetivo de contribuir para a <strong>luta antirracista</strong> e valorizar a
+                cultura negra por meio da tecnologia e da educação.</p>
+            <p>Nosso site foi criado especialmente para o <strong>Novembro Negro</strong>, reunindo 
+materiais educativos e informativos que promovem o conhecimento, o respeito e a valorização 
+da história e da identidade afro-brasileira. 
+Queremos que este espaço sirva como uma ferramenta de aprendizado e reflexão, 
+estimulando o combate ao racismo e a construção de uma sociedade mais justa e igualitária.</p>
+
+<p>A proposta busca incentivar o uso dos recursos digitais como forma de disseminar saberes, 
+compartilhar experiências e fortalecer o reconhecimento da importância da cultura negra 
+em todos os espaços.</p>
+
+<p><br><b>Professores orientadores:</b> Gênia Darc e Raphael.</p>
+            <a href="https://www.instagram.com/tec.info2024/" class="btn" target="_blank">Rede Social</a>
+        </div>
+    </div>
+        <div class="texturas_circulos">
+            <div class="circulos_de_fundo"></div>
+            <div class="circulos_de_fundo"></div>
+            <div class="circulos_de_fundo"></div>
+            <div class="circulos_de_fundo"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
 
 </body>
 </html>

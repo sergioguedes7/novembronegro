@@ -5,10 +5,10 @@ from flask import render_template, url_for
 def homepage():
     return render_template('paginainicial.html')
 
-@app.route('/novembronegro')
-def novembronegro():
-    return render_template('sobre_novembronegro.html')
+@app.route('/pesquisa1')
+def pesquisa1():
+    return render_template('pesquisas/pesquisa1.html')
 
-@app.route('/sobrenos')
-def sobrenos():
-    return render_template('sobrenos.html')
+@app.route('/pesquisa2')
+def pesquisa2():
+    return render_template('pesquisas/pesquisa2.html')
