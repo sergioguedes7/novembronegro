@@ -27,6 +27,8 @@ body {
     padding-top: 90px;
 }
 
+
+
 .instagram {
     display: flex;
     align-items: center;
@@ -43,7 +45,7 @@ body {
 header {
     background-color: var(--primaria);
     position: fixed;
-    width: 100vw;
+    width: 100%;
     top: 0;
     left: 0;
     right: 0;
@@ -484,3 +486,147 @@ main#inicial {
     font-size: 1.5rem;
     padding: 0.5rem 0;
 }
+
+
+/* Media Query /*
+
+
+/*Celulares (ate 480):*/
+@media (max-width: 480px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .flex {
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .txt-topo-site h1 {
+        margin-top: 20px;
+        font-size: 35px;
+        line-height: 2.2rem;
+    }
+
+    .img-topo-site img {
+        max-width: 90%
+    };
+
+    .principal {
+        height: auto;
+        min-height: 100vh;
+        overflow: visible;
+        padding-bottom: 80px;
+    }
+
+    .list {
+        width: 90%;
+    }
+
+    .list .title {
+        text-align: left;
+        margin-left: 1rem;
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+
+    /* ----------------------------- */
+    .item {
+        flex-direction: line;
+        text-align: center;
+
+    }
+
+    .content {
+        padding-right: 0;
+        padding-top: 100px;
+        margin-left: 24px;
+    }
+
+    .exemplos_ativo img{
+        height: auto;
+        display: block;
+        max-width: 100%;
+    }
+
+    .title {
+        margin-bottom: 1rem;
+    }
+
+    /* ---------------------- */
+
+    #materiais_ed h2 {
+        text-align: left;
+        margin-left: 1rem;
+        font-size: 45px;
+    }
+
+    .menu .box-container {
+        display: inline-block;
+        padding: 20px;
+    }
+
+    .menu .box-container .box {
+        border: 3px solid #ffcc00;
+        border-radius: 10px;
+        background-color: #7d4014;
+        padding: 20px;
+        margin: 10px;
+        box-sizing: border-box;
+    }
+
+    /* ------------------------- */
+    .sobre {
+        background-color: #7d4014;
+        color: #fff;
+        padding: 60px 20px;
+        text-align: center;
+        }
+
+    .sobrenos .title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+        color: #fff;
+    }
+
+    .sobrenos .title span {
+        color: #ffb347; 
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cont {
+        max-width: 800px;
+        width: 100%;
+        line-height: 1.8;
+        text-align: justify;
+        margin-bottom: 30px;
+    }
+
+    .imagemsobre img {
+        width: 80%;
+        max-width: 500px;
+        border-radius: 12px;
+    }
+
+    .cont p {
+        margin-bottom: 15px;
+    }
+
+    #sobre .title {
+        text-align: left;
+        margin-left: 1rem;
+        font-size: 45px;
+    }
+}
+
+/* @media (max-width: 1200px) { ... } 
+@media (max-width: 768px) { ... }  
+@media (max-width: 480px) { ... } */
