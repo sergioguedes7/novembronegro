@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="../static/style.css">
     <title>Luta Antirracista</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +16,7 @@
 </head>
 <body>
     <header>
-
-        <div class="logo"><a href="#inicial"><img src="{{ url_for('static', filename='img/home.png') }}" alt="home"></a></div>
+        <div class="logo"><a href="#inicial"><img src="../static/img/home.png" alt="home"></a></div>
         <nav>
             <ul>
                 <li><a href="#discentes">Nossos Alunos</a></li>
@@ -25,11 +24,11 @@
                 <li><a href="#sobre">Sobre Nós</a></li>
             </ul>
         </nav>
-        <a href="https://www.instagram.com/tec.info2024/" target="_blank" class="instagram">
-    <img src="{{ url_for('static', filename='img/instagram.png') }}" alt="Logo insta" class="instagram">
-</a>
+        <a href="https://www.instagram.com/tec.info2024/" target="_blank" class="instagram"><img src="../static/img/instagram.png" alt="Logo insta" clas class="instagram" title="Esse botão te leva a rede social oficial da turma"></a>
     </header>
     
+    
+
     <main class="home-inicial">
         <div class="texturas_circulos">
             <div class="circulos_de_fundo"></div>
@@ -41,17 +40,17 @@
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
-                        <h1>NOVEMBRO <span>NEGRO</span> <br><span>Informática</span> 2024</span></h1>
+                        <h1>NOVEMBRO <span>NEGRO</span> <br><span>Informática</span> 2024</h1>
                         <p>Novembro é um mês simbólico e de profunda importância para a população negra no Brasil. <br>
 
 Marcado pelo Dia da Consciência Negra, celebrado em 20 de novembro, esse período convida toda a sociedade a refletir sobre o racismo estrutural, as desigualdades históricas e, sobretudo, sobre a resistência e a força do povo negro ao longo dos séculos. <br> <br>
 
-Nós, da turma de Informática 2024 Integrado do IF Baiano – Campus Lapa, te convidamos a conhecer e valorizar essa data tão significativa, que celebra a luta, a cultura e a história de um povo que continua inspirando a construção de uma sociedade mais justa, igualitária e antirracista.
+Nós, do 2º Ano de Informática Integrado do IF Baiano – Campus Lapa, te convidamos a conhecer e valorizar essa data tão significativa, que celebra a luta, a cultura e a história de um povo que continua inspirando a construção de uma sociedade mais justa, igualitária e antirracista.
                         </p>
-                        <div class="btn"><a href="#sobre">Sobre nós</a></div>
+                        <div class="btn"><a href="#sobre" title="Esse botão te leva ao topico de mais detalhado sobre o desenvolvimento do projeto">Sobre nós</a></div>
                     </div>
                     <div class="img-topo-site">
-                        <img src="{{ url_for('static', filename='img/turma.jpg')}}" alt="turma">
+                        <img src="../static/img/fotodaturma.jpg" alt="turma" title="Essa é a imagem da nossa turma completa, mostrando todos discentes.">
                     </div>
                 </div>
 
@@ -74,45 +73,74 @@ Nós, da turma de Informática 2024 Integrado do IF Baiano – Campus Lapa, te c
 
             <div class="item active">
 
-                <div class="exemplos_ativo"><img src="{{ url_for('static', filename='img/diego-foto.png')}}" alt="Pessoa 1"></div>
+                <div class="exemplos_ativo"><img src="../static/img/diego-foto.png" alt="Pessoa 1" title="Esse é o nosso aluno de Informática: Diego"></div>
                 <div class="content">
-                    <p class="product-name">Diego dos Anjos</p>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint a exercitationem dolore eos quo sit repellendus nobis perspiciatis vero, magni, quod minus enim alias ducimus nam molestias vel error in.</p>
-                    <!-- <button class="btn">Saiba mais</button> -->
-
+                    <p class="product-name">Diego dos Anjos Pereira</p>
+                    <p class="description">Aluno do 2º Ano de Informática</p>
                 </div>
                     
             </div>
+            <div class="item">
+
+                <div class="exemplos_ativo"><img src="../static/img/poliana.png" alt="Pessoa 3"></div>
+                <div class="content">
+                    <p class="product-name">Poliana dos Santos Evangelista</p>
+                    <p class="description">Aluna do 2º Ano de Informática</p>
+                </div>
+
+            </div>     
+
+            <div class="item">
+
+                <div class="exemplos_ativo"><img src="../static/img/sergio.png" alt="Pessoa 2" title="Esse é o nosso aluno de Informática: Sérgio"></div>
+                <div class="content">
+                    <p class="product-name">Sérgio Gabriel Souza Guedes</p>
+                    <p class="description">Aluno do 2º Ano de Informática</p>
+                </div>
+            </div>
+
+            <div class="item">
+
+                <div class="exemplos_ativo"><img src="../static/img/alicia.png" alt="Pessoa 4"></div>
+                <div class="content">
+                    <p class="product-name">Alicia dos Santos Rocha</p>
+                    <p class="description">Aluna do 2º Ano de Informática</p>
+                </div>
+            </div>    
+
+            <div class="item">
+                <div class="exemplos_ativo"><img src="../static/img/camila.png" alt="Pessoa 5"></div>
+                <div class="content">
+                    <p class="product-name">Camila Pereira dos Santos</p>
+                    <p class="description">Aluna do 2º Ano de Informática</p>
+                </div>
+            </div>   
             
             <div class="item">
-
-                <div class="exemplos_ativo"><img src="{{ url_for('static', filename='img/pessoa1.png')}}" alt="Pessoa 2"></div>
+                <div class="exemplos_ativo"><img src="../static/img/ludmilla.png" alt="Pessoa 6"></div>
                 <div class="content">
-                    <p class="product-name">Nome da pessoa</p>
-                    <p class="description">Explicação sobre a pessoa</p>
-                    <!-- <button class="btn">Saiba mais</button> -->
+                    <p class="product-name">Ludmilla Alves Valentim</p>
+                    <p class="description">Aluna do 2º Ano de Informática</p>
                 </div>
-
-            </div>
+            </div>  
+            
             <div class="item">
-
-                <div class="exemplos_ativo"><img src="{{ url_for('static', filename='img/pessoa2.png')}}" alt="Pessoa 2"></div>
+                <div class="exemplos_ativo"><img src="../static/img/emile.png" alt="Pessoa 7"></div>
                 <div class="content">
-                    <p class="product-name">Nome da pessoa</p>
-                    <p class="description">Explicação sobre a pessoa</p>
-                    <!-- <button class="btn">Saiba mais</button> -->
+                    <p class="product-name">Emile da Silva Souza</p>
+                    <p class="description">Aluna do 2º Ano de Informática</p>
                 </div>
+            </div>  
 
-            </div>
         </div>
 
         <div class="arrows" id="next">
             <button class="arrow-btn" id="tras"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
-  <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+  <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" title="Botão de Avançar"/>
 </svg></button>
 
             <button class="arrow-btn" id="frente"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-  <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+  <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" title="Botão de Voltar"/>
 </svg></button>
         </div>
 
@@ -121,6 +149,10 @@ Nós, da turma de Informática 2024 Integrado do IF Baiano – Campus Lapa, te c
 
         <div class="dots">
             <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
             <div class="dot"></div>
             <div class="dot"></div>
         </div>
@@ -134,45 +166,45 @@ Nós, da turma de Informática 2024 Integrado do IF Baiano – Campus Lapa, te c
         <div class="box-container">
 
             <div class="box">
-                <img src="{{ url_for('static', filename='img/pesquisas/images.jpg')}}" alt="img1">
+                <img src="../static/img/pesquisas/images.jpg" alt="img1">
                 <h3>Novembro Negro</h3>
                 <p class="price">Oque é?</p>
-                <a href="{{url_for('pesquisa1')}}" class="btn">Clique aqui</a>
+                <a href="pesquisas/pesquisa1.html" class="btn">Clique aqui</a>
             </div>
 
             <div class="box">
-                <img src="{{ url_for('static', filename='img/pesquisas/pesquisa2.PNG')}}" alt="img1">
+                <img src="../static/img/pesquisas/pesquisa2.PNG" alt="img2">
                 <h3>6 atitudes para combater o racismo institucional no setor público</h3>
                 <p class="price"></p>
-                <a href="{{url_for('pesquisa2')}}" class="btn">Clique aqui</a>
+                <a href="pesquisas/pesquisa2.html" class="btn">Clique aqui</a>
             </div>
 
             <div class="box">
-                <img src="" alt="img1">
-                <h3>T1</h3>
+                <img src="../static/img/pesquisas/pesquisa3.jpg" alt="img3">
+                <h3>Antirracismo</h3>
                 <p class="price"></p>
-                <a href="" class="btn">Clique aqui</a>
+                <a href="pesquisas/pesquisa3.html" class="btn">Clique aqui</a>
             </div>
 
             <div class="box">
-                <img src="" alt="img1">
-                <h3>T1</h3>
+                <img src="../static/img/pesquisas/pesquisa4.jpg" alt="img4">
+                <h3>O que é Educação Antirracista?</h3>
                 <p class="price"></p>
-                <a href="" class="btn">Clique aqui</a>
+                <a href="pesquisas/pesquisa4.html" class="btn">Clique aqui</a>
             </div>
 
                 <div class="box">
-                <img src="" alt="img1">
-                <h3>T1</h3>
+                <img src="../static/img/pesquisas/pesquisa5.png" alt="img5">
+                <h3>Racismo Estrutural e suas Consequências na Escola</h3>
                 <p class="price"></p>
-                <a href="" class="btn">Clique aqui</a>
+                <a href="pesquisas/pesquisa5.html" class="btn">Clique aqui</a>
             </div>
             
             <div class="box">
-                <img src="" alt="img1">
-                <h3>T1</h3>
+                <img src="../static/img/pesquisas/pesquisa6.png" alt="img6">
+                <h3>Lei 10.639/2003 e sua Importância</h3>
                 <p class="price"></p>
-                <a href="" class="btn">Clique aqui</a>
+                <a href="pesquisas/pesquisa6.html" class="btn">Clique aqui</a>
             </div>
 
         </div>
@@ -185,26 +217,24 @@ Nós, da turma de Informática 2024 Integrado do IF Baiano – Campus Lapa, te c
     </section>
 
     <section class="sobre" id="sobre">
-        <div class="sobrenos">
-            <h2 class="title">SOBRE <span>NÓS</span></h2>
-            <div class="row">
-                <div class="imagemsobre"><img src="{{ url_for('static', filename='img/turma.jpg')}}" alt="foto da turma">
-            </div>
-            <div class="cont">
-                <h3>Turma de Informática 2024 Integrado</h3>
-                <p>Somos a turma da turma de <strong>Informática 2024 Integrado</strong> do Instituto Federal Baiano – Campus Lapa.
-                    Este projeto foi desenvolvido com o objetivo de contribuir para a <strong>luta antirracista</strong> e valorizar a
-                    cultura negra por meio da tecnologia e da educação.</p>
-                <p>Nosso site foi criado especialmente para o <strong>Novembro Negro</strong>, reunindo 
-    materiais educativos e informativos que promovem o conhecimento, o respeito e a valorização 
-    da história e da identidade afro-brasileira. 
-    Queremos que este espaço sirva como uma ferramenta de aprendizado e reflexão, 
-    estimulando o combate ao racismo e a construção de uma sociedade mais justa e igualitária.</p>
-
-    <p>A proposta busca incentivar o uso dos recursos digitais como forma de disseminar saberes, 
-    compartilhar experiências e fortalecer o reconhecimento da importância da cultura negra 
-    em todos os espaços.</p>
+        <h2 class="title">SOBRE <span>NÓS</span></h2>
+        <div class="row">
+            <div class="imagemsobre"><img src="img/fotodaturma.jpg" alt="">
         </div>
+        <div class="cont">
+            <h3>Informática 2024</h3>
+            <p>Somos a turma de <strong>Informática 2024</strong> do Instituto Federal Baiano – Campus Lapa.
+                Este projeto foi desenvolvido com o objetivo de contribuir para a <strong>luta antirracista</strong> e valorizar a
+                cultura negra por meio da tecnologia e da educação.</p>
+            <p>Nosso site foi criado especialmente para o <strong>Novembro Negro</strong>, reunindo 
+materiais educativos e informativos que promovem o conhecimento, o respeito e a valorização 
+da história e da identidade afro-brasileira. 
+Queremos que este espaço sirva como uma ferramenta de aprendizado e reflexão, 
+estimulando o combate ao racismo e a construção de uma sociedade mais justa e igualitária.</p>
+
+<p>A proposta busca incentivar o uso dos recursos digitais como forma de disseminar saberes, 
+compartilhar experiências e fortalecer o reconhecimento da importância da cultura negra 
+em todos os espaços.</p>
 
 <p><br><b>Professores orientadores:</b> Gênia Darc e Raphael.</p>
             <a href="https://www.instagram.com/tec.info2024/" class="btn" target="_blank">Rede Social</a>
@@ -226,6 +256,7 @@ Nós, da turma de Informática 2024 Integrado do IF Baiano – Campus Lapa, te c
         <div class="vw-plugin-top-wrapper"></div>
     </div>
 </div>
+
 
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 <script>
