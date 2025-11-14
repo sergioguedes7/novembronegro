@@ -7,116 +7,213 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
 
-body {
-  background-color: #7d4014;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
+    body {
+      background-color: #7d4014;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
 
-.container {
-  width: 90%;
-  max-width: 900px;
-  background: #3d1f0a;
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
-  overflow: hidden;
-}
+    .container {
+      width: 90%;
+      max-width: 900px;
+      background: #3d1f0a;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
 
-header {
-  background-color: #D9A441;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-}
+    header {
+      background-color: #D9A441;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+    }
 
-.btn-voltar {
-  background: none;
-  color: #3d1f0a;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: 0.3s;
-}
+    .btn-voltar {
+      background: none;
+      color: #3d1f0a;
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
 
-.btn-voltar:hover {
-  color: #7d4014;
-}
+    .btn-voltar:hover {
+      color: #7d4014;
+    }
 
-.pesquisa {
-  text-align: center;
-  padding: 60px 20px;
-}
+    .pesquisa {
+      text-align: center;
+      padding: 60px 20px;
+    }
 
-.pesquisa h1 {
-  font-size: 4rem;
-  margin-bottom: 20px;
-  color: #f4f4f4;
-}
+    .pesquisa h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      color: #f4f4f4;
+    }
 
-.pesquisa p {
-  font-size: 2rem;
-  text-align: justify;
-  color: #f4f4f4;
-}
+    .pesquisa p {
+      font-size: 2rem;
+      text-align: justify;
+      color: #f4f4f4;
+    }
 
-.referencias {
-  background-color: #3d1f0a;
-  padding: 30px;
-  border-top: 2px solid #D9A441;
-}
+    .referencias {
+      background-color: #3d1f0a;
+      padding: 30px;
+      border-top: 2px solid #D9A441;
+    }
 
-.referencias h2 {
-  margin-bottom: 10px;
-  color: #fafafa;
-}
+    .referencias h2 {
+      margin-bottom: 10px;
+      color: #fafafa;
+    }
 
-.referencias ul {
-  list-style: none;
-}
+    .referencias ul {
+      list-style: none;
+    }
 
-.referencias li {
-  margin-bottom: 8px;
-  color: #ffffff;
-}
+    .referencias li {
+      margin-bottom: 8px;
+      color: #ffffff;
+    }
 
-.referencias span {
-  margin-bottom: 8px;
-  color: #3d65f4;
-}
+    .referencias span {
+      margin-bottom: 8px;
+      color: #3d65f4;
+    }
 
-[vw-access-button] {
-  transform: scale(0.8) !important;
-  bottom: 15px !important;
-  right: 15px !important;
-}
+    [vw-access-button] {
+      transform: scale(0.8) !important;
+      bottom: 15px !important;
+      right: 15px !important;
+    }
 
-[vw-plugin-wrapper] {
-  transform: scale(0.8) !important;
-  transform-origin: bottom right !important;
-}
+    [vw-plugin-wrapper] {
+      transform: scale(0.8) !important;
+      transform-origin: bottom right !important;
+    }
+
+    .epub a {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 20px;
+      margin: 30px 0 10px 0;
+      background-color: #A0522D;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+
+    }
+
+    .epub a:hover{
+      background-color: #8B4513;;
+      transform: scale(1.05);
+    }
+
+    .pdf a {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 20px;
+      margin: 5px 0 30px 0;
+      background-color: #A0522D;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .pdf a:hover{
+      background-color: #8B4513;;
+      transform: scale(1.05);
+    }
+
+    @media(max-width: 480px) {
+
+      .pesquisa {
+        padding: 10px;
+      }
+
+      .pesquisa h1 {
+        font-size: 45px;
+        padding: 20px;
+      }
+
+      .pesquisa p {
+        font-size: 20px;
+      }
+
+      .epub a {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 20px;
+      margin: 30px 0 10px 0;
+      background-color: #A0522D;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .pdf a {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 20px;
+      margin: 5px 0 30px 0;
+      background-color: #A0522D;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+      
+    }
+    
     </style>
 </head>
 <body>
   <div class="container">
-
+    
     <header>
       <a href="{{url_for('homepage')}}" class="btn-voltar"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
-  <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
-</svg></a>
+        <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+      </svg></a>
     </header>
-
+    
     <main class="pesquisa">
-        <h1>Novembro Negro</h1>
+      <h1>Novembro Negro</h1>
+
+      <div class="epub">
+        <a href="{{url_for('static', filename='docs/NovembroNegro.epub')}}"
+          download
+          class="botao-download"
+          aria-label="Baixar o documento Novembro Negro em formato EPUB">
+          📥 Baixar EPUB
+        </a>
+      </div>
+
+      <div class="pdf">
+        <a href="{{url_for('static', filename='docs/NovembroNegro.pdf.pdf')}}"
+          download
+          class="botao-download"
+          aria-label="Baixar o documento Novembro Negro em formato PDF">
+          📥 Baixar PDF
+        </a>
+      </div>
         <p>O mês de novembro marca a luta e a resistência do povo negro no Brasil, tendo como
 símbolo o Dia Nacional da Consciência Negra (20 de novembro), data que relembra Zumbi
 dos Palmares, líder do Quilombo dos Palmares, assassinado em 1695. O quilombo
@@ -134,6 +231,7 @@ momento de reflexão e reafirmação política, buscando que a história brasile
 protagonismo do povo negro e que a sociedade avance na construção de igualdade com
 respeito às diferenças.</p>
     </main>
+
 
     <footer class="referencias">
        <h2>Referências</h2>

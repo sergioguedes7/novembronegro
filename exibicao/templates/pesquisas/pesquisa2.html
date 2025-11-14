@@ -7,103 +7,180 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-}
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+      }
 
-body {
-  background-color: #7d4014;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
+      body {
+        background-color: #7d4014;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
 
-.container {
-  width: 90%;
-  max-width: 900px;
-  background: #3d1f0a;
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
-  overflow: hidden;
-}
+      .container {
+        width: 90%;
+        max-width: 900px;
+        background: #3d1f0a;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        overflow: hidden;
+      }
 
-header {
-  background-color: #D9A441;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-}
+      header {
+        background-color: #D9A441;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
 
-.btn-voltar {
-  background: none;
-  color: #3d1f0a;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: 0.3s;
-}
+      .btn-voltar {
+        background: none;
+        color: #3d1f0a;
+        border: none;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: 0.3s;
+      }
 
-.btn-voltar:hover {
-  color: #7d4014;
-}
+      .btn-voltar:hover {
+        color: #7d4014;
+      }
 
-.pesquisa {
-  text-align: center;
-  padding: 60px 20px;
-}
+      .pesquisa {
+        text-align: center;
+        padding: 60px 20px;
+      }
 
-.pesquisa h1 {
-  font-size: 4rem;
-  margin-bottom: 20px;
-  color: #f4f4f4;
-}
+      .pesquisa h1 {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        color: #f4f4f4;
+      }
 
-.pesquisa p {
-  font-size: 2rem;
-  text-align: justify;
-  color: #f4f4f4;
-}
+      .pesquisa p {
+        font-size: 2rem;
+        text-align: justify;
+        color: #f4f4f4;
+      }
 
-.referencias {
-  background-color: #3d1f0a;
-  padding: 30px;
-  border-top: 2px solid #D9A441;
-}
+      .referencias {
+        background-color: #3d1f0a;
+        padding: 30px;
+        border-top: 2px solid #D9A441;
+      }
 
-.referencias h2 {
-  margin-bottom: 10px;
-  color: #fafafa;
-}
+      .referencias h2 {
+        margin-bottom: 10px;
+        color: #fafafa;
+      }
 
-.referencias ul {
-  list-style: none;
-}
+      .referencias ul {
+        list-style: none;
+      }
 
-.referencias li {
-  margin-bottom: 8px;
-  color: #ffffff;
-}
+      .referencias li {
+        margin-bottom: 8px;
+        color: #ffffff;
+      }
 
-.referencias span {
-  margin-bottom: 8px;
-  color: #3d65f4;
-}
+      .referencias span {
+        margin-bottom: 8px;
+        color: #3d65f4;
+      }
 
-[vw-access-button] {
-  transform: scale(0.8) !important;
-  bottom: 15px !important;
-  right: 15px !important;
-}
+      [vw-access-button] {
+        transform: scale(0.8) !important;
+        bottom: 15px !important;
+        right: 15px !important;
+      }
 
-[vw-plugin-wrapper] {
-  transform: scale(0.8) !important;
-  transform-origin: bottom right !important;
-}
+      [vw-plugin-wrapper] {
+        transform: scale(0.8) !important;
+        transform-origin: bottom right !important;
+      }
+
+      .epub a {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 20px;
+      margin: 30px 0 10px 0;
+      background-color: #A0522D;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+
+    }
+
+    .epub a:hover{
+      background-color: #8B4513;;
+      transform: scale(1.05);
+    }
+
+    .pdf a {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 20px;
+      margin: 5px 0 30px 0;
+      background-color: #A0522D;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .pdf a:hover{
+      background-color: #8B4513;;
+      transform: scale(1.05);
+    }
+
+      @media(max-width: 480px) {
+
+        .pesquisa {
+          padding: 10px;
+        }
+
+        .pesquisa h1 {
+          font-size: 40px;
+          padding: 20px;
+        }
+
+        .pesquisa p {
+          font-size: 20px;
+        }
+
+        .epub a {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 20px;
+      margin: 30px 0 10px 0;
+      background-color: #A0522D;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .pdf a {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 20px;
+      margin: 5px 0 30px 0;
+      background-color: #A0522D;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+      }
     </style>
 </head>
 <body>
@@ -116,7 +193,25 @@ header {
     </header>
 
     <main class="pesquisa">
-        <h1>6 atitudes para combater o racismo institucional no setor público</h1>
+      
+      <h1>6 atitudes para combater o racismo institucional no setor público</h1>
+      <div class="epub">
+        <a href="{{url_for('static', filename='docs/CombateaoRacismoInstitucional.epub')}}"
+          download
+          class="botao-download"
+          aria-label="Baixar o documento Novembro Negro em formato EPUB">
+          📥 Baixar EPUB
+        </a>
+      </div>
+
+      <div class="pdf">
+        <a href="{{url_for('static', filename='docs/CombateaoRacismoInstitucional.pdf')}}"
+          download
+          class="botao-download"
+          aria-label="Baixar o documento Novembro Negro em formato PDF">
+          📥 Baixar PDF
+        </a>
+      </div>
         <p>O racismo, formalmente definido como o feito de discriminação baseado na crença da existência de uma hierarquia entre raças e etnias, é comumente confundido com o colorismo, movimento segundo o qual os possuidores de pele clara seriam os ditos superiores, enquanto os de cor mais escura, independente de sua condição econômica, gênero, entre outras características, estariam sempre em um lugar de inferioridade. <br><br>
 
 Ambos os fenômenos estão presentes na vida dos brasileiros desde a sua composição enquanto nação, assim como na maioria, senão em todos os países pós escravocratas e que sofreram colonização europeia. Eles se manifestam a contar do nível pessoal, inclusive, quando pretos e pardos não são capazes de reconhecer-se enquanto pessoas negras, passando ao nível interpessoal, na forma de ações de discriminação e preconceito racial, chegando mais gravemente a forma institucional. <br> <br>
@@ -130,27 +225,28 @@ Assim, enquanto integrantes de uma Rede de Líderes que se propõe a transformar
 Abaixo, listamos 6 atitudes que podem ser tomadas para ajudar a combater o racismo institucional no setor público <br><br>
 1. Reconhecer que o racismo é um problema estrutural e, diante disso, adotar uma postura institucional antirracista
 O primeiro e talvez mais importante passo é reconhecer que o problema existe e precisa ser enfrentado, pois a negação e naturalização do racismo são fatores que contribuem para a sua perpetuação. Dito isso, a luta contra a desigualdade racial não deve ser uma pauta exclusiva de um grupo formado por aqueles diretamente afetados, mas um compromisso de todo e qualquer cidadão. Trazer esse debate para dentro da instituição pública pode ser o pontapé para a implantação de uma cultura antirracista no setor público.
+<br><br>
 
 2. Garantir representatividade de raças e etnias nos espaços coletivos de decisão
 Representatividade em espaços coletivos de decisão como conselhos e órgãos colegiados implica em deixar que as minorias nesses locais falem por seus próprios interesses, sem a necessidade de porta-vozes. Esse é um fator importante pois se considera que a garantia do espaço de fala virá acompanhado pela manutenção entre a igualdade e a diferença. Em outras palavras, para que todos sejam tratados de forma igualitária é necessário que os diversos grupos existentes – etnicos e raciais ou não – sejam valorizados, afinal, a discriminação é necessariamente motivada pelo pertencimento a esses grupos.
-
+<br><br>
 3. Promover atividades formativas com foco na redução de preconceitos e estereótipos de raça
 A essência do serviço público está no atendimento de necessidades coletivas, direta ou indiretamente, de maneira igualitária e acessível a todos(as). A qualificação das equipes com foco na redução de preconceitos e estereótipos permite que esse compromisso seja efetivamente cumprido. O mecanismo aqui está em admitir que todos nós temos vieses cognitivos modificáveis e, uma vez que os reconhecemos é possível mitigar os seus efeitos perversos.
-
+<br><br>
 Entender os nossos vieses cognitivos, isto é, os nossos padrões comportamentais baseados nas nossas experiências e percepções prévias, nos ajuda a identificar os gatilhos capazes de distorcer o nosso julgamento e, inclusive, originar atividades discriminatórias.
 
 Como exemplo prático da disponibilização de atividades formativas para servidores públicos dentro dessa temática, podemos citar o Programa de Formação por uma Educação Antirracista, lançado pela Secretaria de Estado de Educação do Rio de Janeiro em abril de 2021 com o objetivo de promover reflexões em torno da questão racial e suas implicações na consolidação do direito à educação.
-
+<br><br>
 4. Realizar um diagnóstico interno e, posteriormente, incluir a diversidade de raça como um critério para a ocupação de cargos de liderança
 Já parou para pensar onde estão os negros no no serviço público no Brasil? De acordo com um mapeamento realizado pelo República.org, apesar da existência das cotas raciais para concursos públicos da União desde 2014, apenas 35,61% dos ocupantes de cargos federais no Brasil são negros e 23,72% dos servidores estão em carreiras de gestão. A nível municipal, a situação não é diferente. O estudo revela que, em 2020, na Prefeitura de São Paulo, apenas 28,6% dos servidores públicos ativos eram negros. Destes, 48% ocupavam quadros de nível básico.
 
 Para ajudar a reverter esse quadro, especialmente no que diz respeito à ocupação de cargos de livre nomeação, recentemente, processos seletivos sob a ótica da gestão por competências e modernização do setor público têm ganhado destaque com o apoio de organizações do terceiro setor, como é o caso da aliança formada pela Fundação Lemann, Fundação Brava, Instituto Humanize e e República.org, por exemplo.
 
 De toda forma, realizar um diagnóstico dentro das instituições públicas, de maneira a identificar o perfil e as funções exercidas pelos servidores, e estabelecer a diversidade racial como um critério e uma meta a ser atingida, é importante para que se propicie igualdade de oportunidades.
-
+<br><br>
 5. Criar programas de qualificação de preenchimento e coleta de dados sobre a população negra
 A estratificação de indicadores sociais a partir da categoria de raça/cor é importante porque permite a elaboração de políticas mais assertivas de enfrentamento ao racismo estrutural. Um exemplo é o projeto A Cor da Mobilidade do Instituto de Políticas de Transporte e Desenvolvimento, que chamou a atenção para a falta de dados racializados sobre mobilidade urbana. Segundo os autores do projeto, as pesquisas origem-destino, uma das principais ferramentas para entender o sistema de transportes de uma cidade, apesar de serem realizadas no Brasil desde a década de 1960, não coletam dados relacionados à raça no país, o que prejudica a elaboração de políticas voltadas para o combate das desigualdades nesse segmento.
-
+<br><br>
 6. Considerar a transversalidade do tema na formulação e implementação de políticas públicas
 Falar de políticas públicas transversais implica admitir que a realidade social é diversa e complexa. Isto é, ao desenharmos e implementarmos soluções, é pouco efetivo considerarmos números isolados, sem observar os cenários em sua totalidade e possíveis efeitos sinérgicos. Em termos práticos, uma política de redução de disparidades de renda e redução da pobreza, por exemplo, precisa estar associada a ações afirmativas em educação e de ampliação do acesso à saúde para que seja efetiva. Logo, é necessário um olhar cuidadoso por parte dos gestores públicos e a atuação integrada de diferentes setores do Governo.
 
