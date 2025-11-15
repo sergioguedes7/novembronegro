@@ -6,6 +6,7 @@
     <title>Luta Antirracista</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/img/home.png" type="image/x-icon">
     <style>
 * {
   margin: 0;
@@ -104,19 +105,114 @@ header {
   transform: scale(0.8) !important;
   transform-origin: bottom right !important;
 }
+
+ .epub a {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 20px;
+      margin: 30px 0 10px 0;
+      background-color: #A0522D;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+
+    }
+
+    .epub a:hover{
+      background-color: #8B4513;;
+      transform: scale(1.05);
+    }
+
+    .pdf a {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 20px;
+      margin: 5px 0 30px 0;
+      background-color: #A0522D;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .pdf a:hover{
+      background-color: #8B4513;;
+      transform: scale(1.05);
+    }
+
+    @media(max-width: 480px) {
+
+      .pesquisa {
+        padding: 10px;
+      }
+
+      .pesquisa h1 {
+        font-size: 45px;
+        padding: 20px;
+      }
+
+      .pesquisa p {
+        font-size: 20px;
+      }
+
+      .epub a {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 20px;
+      margin: 30px 0 10px 0;
+      background-color: #A0522D;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .pdf a {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 20px;
+      margin: 5px 0 30px 0;
+      background-color: #A0522D;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+      
+    }
     </style>
 </head>
 <body>
   <div class="container">
 
     <header>
-      <a href="../paginainicial.html" class="btn-voltar"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+      <a href="../paginainicial.html#pesquisa4" class="btn-voltar"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
   <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
 </svg></a>
     </header>
 
     <main class="pesquisa">
         <h1>O que é Educação Antirracista</h1>
+         <div class="epub">
+          <a href="../../static/docs/EDUCAÇAO_ANTIRRACISTA.epub"
+          download
+          class="botao-download"
+          aria-label="Baixar o documento Novembro Negro em formato EPUB">
+          📥 Baixar EPUB
+        </a>
+      </div>
+
+      <div class="pdf">
+        <a href="../../static/docs/EDUCAÇAO_ANTIRRACISTA.pdf"
+          download
+          class="botao-download"
+          aria-label="Baixar o documento Novembro Negro em formato PDF">
+          📥 Baixar PDF
+        </a>
+      </div>
         <p>A educação antirracista é uma prática pedagógica e social que busca combater o racismo, valorizar a diversidade e promover a igualdade racial dentro e fora da escola. Ela não se resume a ensinar sobre a história africana, mas sim a transformar a forma como o conhecimento é transmitido, incluindo perspectivas negras, indígenas e diversas. Uma escola antirracista é aquela que reconhece as desigualdades, questiona o racismo institucional e trabalha ativamente para garantir respeito e oportunidades iguais a todos os alunos. <br><br>
 
 De acordo com especialistas, ser antirracista não significa apenas “não ser racista”, mas agir contra o racismo sempre que ele aparece — em livros, falas, piadas, práticas e estruturas. A escola é um dos principais espaços para essa transformação, pois é nela que se formam cidadãos críticos e conscientes de seu papel na sociedade.</p>

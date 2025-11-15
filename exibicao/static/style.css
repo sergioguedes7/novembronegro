@@ -27,8 +27,6 @@ body {
     padding-top: 90px;
 }
 
-
-
 .instagram {
     display: flex;
     align-items: center;
@@ -45,7 +43,7 @@ body {
 header {
     background-color: var(--primaria);
     position: fixed;
-    width: 100%;
+    width: 100vw;
     top: 0;
     left: 0;
     right: 0;
@@ -212,10 +210,14 @@ main#inicial {
     margin: 0 auto;
     position: relative;
     margin-top: 30px;
+    z-index: 999;
 }
+
 
 .list .title {
     margin-top: -35px;
+    z-index: 999;
+    position: relative;
 }
 
 .item {
@@ -234,6 +236,10 @@ main#inicial {
     opacity: 1;
 
     transform: translate(0);
+}
+
+.exemplos_ativo img {
+    z-index: 0;
 }
 
 .exemplos_img {
@@ -307,7 +313,7 @@ main#inicial {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 5;
+    z-index: 99999;
 }
 
 .arrow-btn {
@@ -422,6 +428,10 @@ main#inicial {
     color: var(--secundaria);
 }
 
+.sobre {
+    margin-top: -130px;
+}
+
 .sobre .row {
     display: flex;
     align-items: center;
@@ -451,7 +461,7 @@ main#inicial {
 }
 
 .menu {
-    margin-top: -00px;
+    margin-top: -130px;
 }
 
 .menu .box-container{
@@ -487,16 +497,86 @@ main#inicial {
     padding: 0.5rem 0;
 }
 
+/* MENU MOBILE */
+/* .overlay-menu {
+    background-color: #0000005b;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888888;
+    display: none;
+}
+
+.btn-abrir-menu {
+    color: var(--secundaria);
+    position: fixed;
+    top: 15px;           
+    right: 20px;
+    z-index: 999999999999999999999999999;
+}
+
+.menu-mobile {
+    background-color: var(--secundaria);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999999999999999;
+    width: 0%;
+    overflow: hidden;
+}
+
+.menu-mobile.abrir-menu {
+    width: 60%;
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 4%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: var(--botoes);
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar{
+    color: var(--botoes);
+    font-size: 20px;
+    margin-right: 400px;
+} 
+
 
 /* Media Query /*
 
 
-/*Celulares (ate 480):*/
-@media (max-width: 480px) {
+/*Celulares (ate 1020):*/
+@media screen and (max-width: 1020px) {
     html, body {
         overflow-x: hidden;
         width: 100%;
     }
+
+    /* header nav{
+        display: none;
+    }
+
+    header a.instagram{
+        display: none;
+    } */
 
     .flex {
         align-items: center;
@@ -538,6 +618,10 @@ main#inicial {
         flex-direction: line;
         text-align: center;
 
+    }
+
+    #discentes h2 {
+        padding-top: 80px;
     }
 
     .content {
@@ -624,6 +708,16 @@ main#inicial {
         text-align: left;
         margin-left: 1rem;
         font-size: 45px;
+    }
+
+    .arrows {
+        margin-left: -10px;
+    }
+
+    .arrow-btn {
+        width: 30px;
+        height: 30px;
+        margin-right: -10px;
     }
 }
 
